@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/loopacademy-matiassosa/static/css/main.d3c934f9.css",
+    "main.js": "/loopacademy-matiassosa/static/js/main.b763a523.js",
+    "static/js/453.0be9a579.chunk.js": "/loopacademy-matiassosa/static/js/453.0be9a579.chunk.js",
+    "static/media/descarga2.webp": "/loopacademy-matiassosa/static/media/descarga2.fb50c4cd0502d55df211.webp",
+    "index.html": "/loopacademy-matiassosa/index.html",
+    "main.d3c934f9.css.map": "/loopacademy-matiassosa/static/css/main.d3c934f9.css.map",
+    "main.b763a523.js.map": "/loopacademy-matiassosa/static/js/main.b763a523.js.map",
+    "453.0be9a579.chunk.js.map": "/loopacademy-matiassosa/static/js/453.0be9a579.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3c934f9.css",
+    "static/js/main.b763a523.js"
+  ]
+}
