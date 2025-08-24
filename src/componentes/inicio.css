@@ -1,0 +1,117 @@
+.home{
+    display: flex;
+    position: relative;
+    min-height: 95vh;
+    min-width: 100vw;
+    height: fit-content;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    color: #ffff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    margin: 0;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.home h1{
+    color: #ffff;
+    font-size: 4rem;
+    animation-duration: 1s;
+    animation-name: movimiento;
+}
+
+.home p{
+    font-size: 2rem;
+    letter-spacing: .17ch;
+}
+
+.textorosa{
+    color: #CB1E52;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.listaBotones{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 30px;
+    left: 0;
+    top: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.linkk{
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid #ffff;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: none;
+}
+
+.linkk:hover {
+    color: #ffff;
+    background: #CB1E52;
+    border: 2px solid #CB1E52;
+    transition: all .35s;
+}
+
+.linkk:hover .textorosa2{
+    color: #ffff;
+    transition: all .35s;
+}
+
+.linkk:not(:hover){
+    transition: all .35s;
+}
+
+.textorosa2{
+    color: #CB1E52;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@keyframes movimiento{
+    from{
+        transform: translateY(200px);
+        opacity: .1;
+    }
+}
+
+@keyframes desvanecido{
+    from{
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .home{
+        margin: 1.5rem 0 0 0;
+    }
+    .home h1{
+        font-size: larger;
+    }
+    
+    .home p{
+        font-size:small;
+        max-width: 400px;
+    }
+}

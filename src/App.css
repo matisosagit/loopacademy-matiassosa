@@ -1,38 +1,32 @@
 .App {
+  display: flex;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 90vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #0A0A0A;
+  background: linear-gradient(#0a0a0abd, #0a0a0a8c), url('./componentes/img/descarga2.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

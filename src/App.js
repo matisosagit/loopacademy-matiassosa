@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Navbar } from './componentes/navbar.jsx';
+import PantallaInicio from './componentes/inicio.js';
+import Loop from './componentes/loop.js';
+import About from './componentes/about.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router basename='/loopacademy-matiassosa'>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<PantallaInicio/>}/>
+          <Route path='/Por-Que-LoopStudio' element={<Loop/>}/>
+          <Route path='/Sobre-mi' element={<About/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
